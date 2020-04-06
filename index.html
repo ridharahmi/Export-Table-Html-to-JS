@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Export Table</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style>
+        section.export h1 {
+            border: 1px solid #ddd;
+            padding: 30px;
+            margin-bottom: 50px;
+            background: #00BCD4;
+            color: #fff;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+<section class="export">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Export Table with Js</h1>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="" id="export_csv">CSV</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" id="export_excel">EXCEL</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" id="export_pdf">PDF</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" id="export_txt">TXT</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" id="export_json">JSON</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" id="export_xml">Xml</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" id="export_sql">SQL</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="" id="export_doc">Word</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="export">
+                        <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">First Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">@chat</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td colspan="2">Ridha</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="2">4</th>
+                            <td rowspan="2" colspan="2">Ridha</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@linkedin</td>
+                        </tr>
+                        <tr>
+                            <td>ridha.rahmi@yahoo.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td colspan="2">Ridha</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Ridha</td>
+                            <td>Rahmi</td>
+                            <td>ridha.rahmi@hotmail.com</td>
+                            <td>@mdo</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libs/js-xlsx/xlsx.core.min.js"></script>
+<script type="text/javascript" src="libs/FileSaver/FileSaver.min.js"></script>
+<script type="text/javascript" src="libs/jsPDF/jspdf.min.js"></script>
+<script type="text/javascript" src="libs/jsPDF-AutoTable/jspdf.plugin.autotable.js"></script>
+<script type="text/javascript" src="libs/html2canvas/html2canvas.min.js"></script>
+<script type="text/javascript" src="js/tableExport.js"></script>
+<script type="text/javascript" src="js/export.js"></script>
+
+</body>
+</html>
